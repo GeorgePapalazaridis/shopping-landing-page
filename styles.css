@@ -12,7 +12,7 @@ body {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto 0 auto;
-    background-color: ghostwhite;
+    background-color: #f7f7f7;
 }
 
 header {
@@ -20,11 +20,13 @@ header {
     justify-content: center;
     align-items: center;
     padding: 2.5rem 0;
+    background-color: #f7f7f7;
 }
 
 header img {
-    max-width: 600px;
+    max-width: 300px;
     width: 100%;
+    height: auto;
 }
 
 nav {
@@ -35,12 +37,14 @@ nav {
     border: 0.2rem solid #2c414f;
     border-radius: 40px 40px 8px 8px;
     padding: 1rem 2rem;
-    margin-bottom: 2rem;
+    margin: 1rem auto 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 nav > ul {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -48,30 +52,32 @@ nav > ul {
 
 nav a.menu-btn {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     padding: 0.8rem 2rem;
     color: white;
-    background: #db9334;
+    background: #d4af37;
     border: none;
-    border-radius: 4px;
-    transition: all 0.5s ease;
+    border-radius: 8px;
+    transition: all 0.3s ease;
     text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a.menu-btn:hover {
-    background: #b98729;
-    transform: scale(0.9);
-    transition: all 1s ease;
+    background: #b88729;
+    transform: scale(0.95);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav a.menu-btn:focus {
-    outline: 2px solid #f39c12;
-    outline-offset: 2px;
+    outline: 3px solid #50c878;
+    outline-offset: 4px;
 }
 
 button:active {
-    background: #1f618d;
-    transform: scale(0.95);
+    background: #965a20;
+    transform: scale(0.9);
 }
 
 button:disabled {
@@ -95,6 +101,7 @@ button:disabled {
     display: block;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 3px solid #d4af37;
 }
 
 .hero-text {
@@ -108,9 +115,9 @@ button:disabled {
         0,
         0,
         0,
-        0.5
+        0.6
     ); /* Transparent black background for readability */
-    padding: 1.5rem 2rem; /* Add padding around the text */
+    padding: 2rem 3rem; /* Add padding around the text */
     border-radius: 8px; /* Slight rounding for the text box */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
 }
@@ -135,8 +142,8 @@ button:disabled {
 }
 
 .art-wrap {
-    background-color: rgb(236, 234, 234);
-    border: 1px solid rgb(236, 234, 234);
+    background-color: #f7f7f7;
+    border: 1px solid #e5e4e2;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2.5rem 1.5rem 2.5rem 1.5rem;
@@ -224,10 +231,6 @@ footer p {
         font-size: 50%; /* 8px (16px * 50%) */
     }
 
-    header img {
-        max-width: 300px;
-    }
-
     .hero-section img {
         height: 250px;
     }
@@ -267,6 +270,21 @@ footer p {
 
     .hero-text p {
         font-size: 1.4rem; /* Adjust subheading size on smaller screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation on smaller screens */
+        padding: 1rem;
+    }
+
+    nav > ul {
+        flex-direction: column; /* Stack menu items */
+        gap: 1rem;
+    }
+
+    nav a.menu-btn {
+        padding: 0.6rem 1.5rem; /* Smaller padding for buttons */
+        font-size: 1.3rem; /* Adjust button font size */
     }
 }
 
