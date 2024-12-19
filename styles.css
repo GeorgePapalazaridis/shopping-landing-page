@@ -197,6 +197,35 @@ footer p {
     .hero-section img {
         height: 250px;
     }
+
+    .articles {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1.5rem; /* Reduce gap between cards */
+        padding: 1rem; /* Reduce padding around the section */
+    }
+
+    .art-wrap {
+        padding: 1.5rem; /* Reduce padding inside cards */
+    }
+
+    .title {
+        font-size: 1.8rem; /* Slightly smaller title font */
+    }
+
+    .text {
+        font-size: 1.4rem; /* Smaller paragraph font */
+        line-height: 1.5; /* Adjust line spacing */
+    }
+
+    .btn {
+        font-size: 1.2rem; /* Smaller button font */
+        padding: 0.6rem 1.5rem; /* Smaller button padding */
+    }
+
+    .art-wrap img {
+        margin: 1rem 0; /* Reduce image margins */
+        width: 80%; /* Ensure images fit within smaller cards */
+    }
 }
 
 /* Medium Screens: 1rem = 10px (Default) */
@@ -207,6 +236,28 @@ footer p {
 
     .articles {
         grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .articles {
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+        gap: 2rem; /* Adjust spacing between cards */
+    }
+
+    .art-wrap {
+        padding: 2rem; /* Adjust card padding */
+    }
+
+    .title {
+        font-size: 1.9rem; /* Slightly smaller title */
+    }
+
+    .text {
+        font-size: 1.5rem; /* Paragraph font size adjustment */
+    }
+
+    .btn {
+        font-size: 1.3rem; /* Adjust button font */
+        padding: 0.7rem 1.8rem; /* Adjust button padding */
     }
 }
 
